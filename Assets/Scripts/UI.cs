@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using Zenject;
 
@@ -78,9 +79,13 @@ public class UI
     public UI(UIDocument uiDocument)
     {
         _root = uiDocument.rootVisualElement;
-        
-        _elements = _root.Q("Elements");
 
+        _elements = _root.Q("Elements");
+        _root.Q("BackMenu").AddManipulator(new ClickManipulator((target) =>
+        {
+            SceneManager.LoadScene("Menu");
+            Debug.Log("asdasd");
+        }));
         _root.Q("Reductor").AddManipulator(new ClickManipulator((target) =>
         {
             _actionClickReductor?.Invoke();
@@ -153,6 +158,7 @@ public class UI
         {
             prevActiveElement?.RemoveFromClassList("ActiveButton");
         }
+
         element.ToggleInClassList("ActiveButton");
     }
 }
