@@ -1,0 +1,29 @@
+.ShowListElements {
+    scale: 1.5 1.5;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+}
+
+.defaultStyleElements {
+    margin-right: 30%;
+    margin-left: 30%;
+    flex-shrink: 0;
+    transform-origin: top;
+    scale: 1.5 1.5;
+}
+
+.HideListElements {
+    scale: 1.5 0;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+}
+
+.ActiveButton {
+    background-color: rgb(77, 207, 69);
+}
+
+.ActiveReductor {
+    background-color: rgb(139, 195, 85);
+}

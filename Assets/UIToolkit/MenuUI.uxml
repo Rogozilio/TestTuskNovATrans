@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UIToolkit/style.uss?fileID=7433441132597879392&amp;guid=c135d58337a8b294c9ba159e548b0522&amp;type=3#style" />
+    <ui:VisualElement style="flex-grow: 1; background-color: rgb(93, 119, 123); flex-direction: column; flex-shrink: 1;">
+        <ui:Button text="Начать" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Start" style="width: 10%; margin-top: 20%; margin-right: 0; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-left: 25%; height: auto; translate: 0 0; scale: 5 5; transform-origin: left top; max-width: 100%; flex-grow: 0; flex-shrink: 1;" />
+        <ui:Button text="Выход" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Exit" style="width: 10%; margin-top: 10%; margin-right: 0; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-left: 25%; height: auto; translate: 0 0; scale: 5 5; transform-origin: left top; max-width: 100%; flex-grow: 0; flex-shrink: 1;" />
+    </ui:VisualElement>
+</ui:UXML>
